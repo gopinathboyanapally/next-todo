@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 86px;
+    position: relative;
+    height: 100vh;
+
+    .taskSummary {
+        border-bottom: 1px dimgray solid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 736px;
+        height: 52px;
+        color: white;
+        margin: 8px 0;
+    
+        p {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            width: 120px;
+        }
+    
+        .counterWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: dimgrey;
+            height: 22px;
+            width: auto;
+            padding: 5px;
+            margin-left: 5px;
+            border-radius: 40%;
+            font-size: 0.6rem;
+        }
+    }
+    
+    .taskContainer {
+        margin: 10px;
+        height: 100%;
+        width: auto;
+    
+        .emptyTasks {
+            p {
+                font-size: 0.8rem;
+                font-style: bold;
+                color: dimgray;
+            }
+        }
+
+        .taskCard {
+            display: flex;
+            background: #434343;
+            border-radius: 4px;
+            width: 720px;
+            height: 50px;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+        
+            input[type=checkbox] {
+                visibility: hidden;
+            }
+        
+            .checkboxContainer {
+                cursor: pointer;
+                position: absolute;
+                margin-left: 15px;
+                height: 20px;
+                width: 20px;
+                background-color: transparent;
+                border: 2px solid rgb(43, 143, 190);
+                border-radius: 50%;
+            }
+        
+            .checkboxContainer:hover {
+                background-color: rgb(43, 143, 190);
+            }
+        
+            .checkboxContainer.active {
+                background-color: rgb(75, 43, 190);
+                border-style: none;
+            }
+        
+            p {
+                margin-left: 50px;
+                padding: 5px;
+            }
+        
+            p.updated {
+                text-decoration: line-through;
+                color: darkgrey;
+            }
+
+            .trashicon {
+                cursor: pointer;
+                margin-right: 15px;
+            }
+        }
+    }
+}

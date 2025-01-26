@@ -1,0 +1,57 @@
+.addTaskHeader {
+    margin: 16rem 78.5rem 2rem auto;
+    width: fit-content;
+    text-align: left;
+}
+
+.addTaskContainer {
+    width: 90%;
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: left;
+
+    input[type="text"] {
+        border-style: none;
+        width: 736px;
+        height: 40px;
+        padding: 8px;
+        color: #fff;
+        background-color: rgb(50, 49, 48);
+    }
+
+    input[type="text"]::placeholder {
+        color: gray;
+    }
+    a {
+        text-decoration: none;
+        width: fit-content;
+        display: block;
+
+        p {
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+    }
+}
+
+.colorPickerContainer {
+    display: flex;
+    width: 500px;
+    height: 40px;
+    background-color: rgb(32, 31, 30);
+    align-items: center;
+    justify-content: flex-start;
+
+    p {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    p:hover {
+        border: 2px white solid;
+    }
+}

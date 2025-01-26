@@ -1,0 +1,19 @@
+.createBtn {
+    background-color: rgb(43, 143, 190);
+    border-style: none;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    height: 52px;
+    width: 736px;
+
+    span {
+        border: 1px white solid;
+        height: 16px;
+        width: 15px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+    }
+}
