@@ -49,14 +49,16 @@ export default function Home() {
     }
   }
 
-  // Delete the task
+  // Delete the task on confirm
   const removeTask = async (id: number) => {
-    try {
-        await deleteTask(id);
-        const data = await loadTasks();
-        setTasks(data);
-    } catch (error) {
-        console.error(error);
+    if (window.confirm('Are you sure you want to delete the task?')) {
+      try {
+          await deleteTask(id);
+          const data = await loadTasks();
+          setTasks(data);
+      } catch (error) {
+          console.error(error);
+      }
     }
   };
 
