@@ -17,3 +17,9 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 830px) {
+    .createBtn {
+        width: 320px;
+    }
+}

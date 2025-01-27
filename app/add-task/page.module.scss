@@ -33,6 +33,12 @@
             text-decoration: none;
         }
     }
+
+    @media (max-width: 830px) {
+        input[type="text"] {
+            width: 340px;
+        }
+    }
 }
 
 .colorPickerContainer {
@@ -53,5 +59,11 @@
 
     p:hover {
         border: 2px white solid;
+    }
+}
+
+@media (max-width: 830px) {
+    .colorPickerContainer {
+        width: 350px;
     }
 }

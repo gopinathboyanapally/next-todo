@@ -37,6 +37,14 @@
             font-size: 0.6rem;
         }
     }
+
+    @media (max-width: 730px) {
+        .taskSummary {
+            width: 320px;
+        }
+    }
+
+    
     
     .taskContainer {
         margin: 10px;
@@ -98,6 +106,12 @@
             .trashicon {
                 cursor: pointer;
                 margin-right: 15px;
+            }
+        }
+
+        @media (max-width: 730px) {
+            .taskCard {
+                width: 320px;
             }
         }
     }

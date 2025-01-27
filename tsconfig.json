@@ -29,9 +29,6 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules",
-    ".next",
-    ".vscode",
-    ".eslintrc"
+    "node_modules"
   ]
 }
