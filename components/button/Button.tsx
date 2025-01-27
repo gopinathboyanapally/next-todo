@@ -19,7 +19,6 @@ const Button = ({ href, btnTxt }: TButton) => {
                 ? <span style={{ borderStyle: 'none' }}> &#x2714; </span>
                 : <span> + </span>
             }
-            
           </button>
         </Link>
     )

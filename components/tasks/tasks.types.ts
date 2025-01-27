@@ -8,4 +8,4 @@ export type TTasks = {
     tasks: TGenericObject[]
 }
 
-export type FnType = (...args: (string | number)[]) => any;
+export type FnType = (...args: (string | number)[]) => void;

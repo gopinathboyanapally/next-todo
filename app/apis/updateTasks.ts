@@ -1,4 +1,4 @@
-export const updateTask = async (taskToUpdate: { id: any, title?: string, color?: string, completed?: boolean }) => {
+export const updateTask = async (taskToUpdate: { id: number, title?: string, color?: string, completed?: boolean }) => {
     const url = `http://localhost:8080/tasks/${taskToUpdate.id}`;
     try {
         const response = await fetch(url, {

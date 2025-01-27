@@ -1,4 +1,5 @@
-import React, { Key } from 'react';
+import type { Key } from 'react';
+import React from 'react';
 import classes from '../../app/page.module.scss';
 
 import type { FnType, TGenericObject } from './tasks.types';

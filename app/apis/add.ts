@@ -8,7 +8,7 @@ export const add = async (tasks: { title?: string; color?: string; }) => {
         });
         const text = await response.text();
         const ok = response.ok;
-        
+
         return { ok, text };
     } catch (error) {
         console.error(error);

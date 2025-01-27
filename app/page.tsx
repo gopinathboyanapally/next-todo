@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 import { loadTasks } from './apis/getTasks';
 import { deleteTask } from './apis/deleteTasks';
@@ -35,9 +35,9 @@ export default function Home() {
   useEffect(() => {
     getInitTaskData();
   }, [tasks]);
-  
+
   // Logic to update the task
-  const updatedTask = async (taskToUpdate: { id: number; title: string; color: string; completed: boolean }) => {
+  const updatedTask = useCallback(async (taskToUpdate: { id: number; title: string; color: string; completed: boolean }) => {
     try {
       // Update the task using the provided `updateTask` function
       await updateTask(taskToUpdate);
@@ -47,7 +47,7 @@ export default function Home() {
     } catch (error) {
       console.log("Failed to update the task:", error);
     }
-  }
+  }, []);
 
   // Delete the task on confirm
   const removeTask = async (id: number) => {
@@ -75,7 +75,7 @@ export default function Home() {
         completed: !tasksClicked[itemId],
     });
   };
-  
+
   // Checks and updates the tasks Clicked state on page re-load which is required to update the Completed count.
   useEffect(() => {
     for (const i of tasks) {
@@ -108,7 +108,7 @@ export default function Home() {
         <div className={classes.taskContainer}>
           {
             tasks.length === 0
-            ? 
+            ?
               <EmptyTasks />
             :
             <Tasks

@@ -93,7 +93,7 @@ const AddTaskPage = () => {
                     }
                 </div>
             </main>
-        </> 
+        </>
     );
 };
 
