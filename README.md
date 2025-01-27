@@ -1,8 +1,5 @@
 # Todo Next App
 
-## URL
-
-
 ## Installation
 To install the Todo app in your local follow these steps:
 
