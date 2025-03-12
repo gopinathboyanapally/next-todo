@@ -1,5 +1,7 @@
 # Todo Next App
 
+A ToDo Application built in next.js
+
 ## Installation
 To install the Todo app in your local follow these steps:
 
