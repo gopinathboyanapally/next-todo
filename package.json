@@ -1,6 +1,7 @@
 {
   "name": "todo-app",
   "version": "0.1.0",
+  "description": "A next.js To-do application",
   "private": true,
   "scripts": {
     "dev": "next dev",
